@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "markmodeller.bim",
+  "version": "0.0.1",
+  "description": "Basic design/layout IFC viewer",
+  "main": "app.js",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js",
+    "watch": "rollup -w -c ./rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benny812/markmodeller.bim.git"
+  },
+  "author": "Benny Johansson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Benny812/markmodeller.bim/issues"
+  },
+  "homepage": "https://github.com/Benny812/markmodeller.bim#readme",
+  "dependencies": {
+    "three": "^0.135.0",
+    "web-ifc-viewer": "^1.0.213"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "rollup": "^3.0.0"
+  }
+}
