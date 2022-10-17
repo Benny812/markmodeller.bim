@@ -11,7 +11,36 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.file-input {
+/* .file-input {
+  display: none;
+} */
+
+label {
+  width: 50%;
+}
+
+.toolbar {
+  gap: 6.25rem;
+  margin-left: 1.25rem;
+
+  top: 50%;
+  border: 2px solid black;
   z-index: 1;
   position: absolute;
+  transform: translateY(-50%);
+}
+.toolbar__data {
+  border: 2px solid red;
+}
+.toolbar__tool {
+  border: 2px solid rgb(47, 255, 0);
+}
+button {
+  background-color: var(--color-dark-25);
+}
+.toolbar__tool--img,
+.toolbar__data--img {
+  width: 80%;
+  text-align: center;
+  transform: translateY(5%);
 }

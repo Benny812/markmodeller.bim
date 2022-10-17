@@ -9,7 +9,82 @@
     <title>MMV-Viewer</title>
   </head>
   <body>
-    <input type="file" name="load" id="file-input" class="file-input" />
+    <div class="toolbar flex">
+      <div class="toolbar__data flex">
+        <input type="file" name="load" id="file-input" class="file-input" />
+        <label class="toolbar__data--btn gallery-button" for="file-input"
+          >select file</label
+        >
+
+        <button class="toolbar__data--btn toolbar-btn"></button>
+        <button class="toolbar__data--btn toolbar-btn-active">
+          <img
+            src="src/resources/svg/spatial tree icon.svg"
+            alt="spatial tree"
+            class="toolbar__data--img responsive-image"
+          />
+        </button>
+        <button class="toolbar__data--btn toolbar-btn-active">
+          <img
+            src="src/resources/svg/P_set.svg"
+            alt="p-set"
+            class="toolbar__data--img responsive-image"
+          />
+        </button>
+      </div>
+      <div class="toolbar__tool flex">
+        <button class="toolbar__tool--btn toolbar-btn-active">
+          <img
+            src="src/resources/svg/iconmonstr-photo-camera-thin.svg"
+            alt="photo"
+            class="toolbar__tool--img responsive-image"
+          />
+        </button>
+        <button class="toolbar__tool--btn toolbar-btn">
+          <img
+            src="src/resources/svg/iconmonstr-ruler-26.svg"
+            alt="ruler"
+            class="toolbar__tool--img responsive-image"
+          />
+        </button>
+        <button class="toolbar__tool--btn toolbar-btn">
+          <img
+            src="src/resources/svg/iconmonstr-pencil-8.svg"
+            alt="pencil"
+            class="toolbar__tool--img responsive-image"
+          />
+        </button>
+        <button class="toolbar__tool--btn toolbar-btn-active">
+          <img
+            src="src/resources/svg/iconmonstr-eye-off-lined.svg"
+            alt="eye off"
+            class="toolbar__tool--img responsive-image"
+          />
+        </button>
+        <button class="toolbar__tool--btn toolbar-btn-active">
+          <img
+            src="src/resources/svg/iconmonstr-eye-x-lined.svg"
+            alt="x-eye"
+            class="toolbar__tool--img responsive-image"
+          />
+        </button>
+        <button class="toolbar__tool--btn toolbar-btn">
+          <img
+            src="src/resources/svg/2D view.svg"
+            alt="linedoff cube"
+            class="toolbar__tool--img responsive-image"
+          />
+        </button>
+        <button class="toolbar__tool--btn toolbar-btn">
+          <img
+            src="src/resources/svg/iconmonstr-cube-lined.svg"
+            alt="cube"
+            class="toolbar__tool--img responsive-image"
+          />
+        </button>
+      </div>
+    </div>
+
     <div class="viewer-container" id="viewer-container"></div>
     <script type="module" src="src/bundle.js"></script>
   </body>
